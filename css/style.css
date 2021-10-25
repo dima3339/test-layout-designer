@@ -1,0 +1,284 @@
+body {
+  font-family: 'Open Sans', sans-serif;  
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  max-width: 100%;
+  min-height: 800px;
+  background-image: url('../images/footer.svg'), url('../images/men.png'), url('../images/back.svg'), linear-gradient(90deg, #8159c6 0%, #6c7cff 100%);
+  background-position: right bottom, top center, center, center;
+  background-repeat: no-repeat;
+}
+
+.wrap {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 19px;
+  margin-bottom: 100px;
+}
+
+.menu__logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu__img {
+  margin-right: 8px;
+}
+
+.menu__text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  text-align: center;
+  font-weight: 700;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 64px;
+}
+
+.menu__items {
+  font-weight: 400;
+}
+
+.menu__numb {
+  color: #ffde00;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.menu__btn {
+  color: #000;
+  background-color: #fff;
+  padding: 19px 25px 17px;
+  border: solid 1px #ffde00;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu__btn:hover {
+  background-color: #ffde00;
+}
+
+.content__general {
+  display: flex;
+}
+
+.content__left {
+  margin-right: 51px;
+}
+
+.title {
+  max-width: 530px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.title__change {
+  color: #ffde00;
+}
+
+.title__about {
+  font-size: 24px;
+  padding-top: 4px;
+  margin-bottom: 15px;
+}
+
+.about__image {
+  cursor: pointer;
+  margin-bottom: 48px;
+  transition: padding 0.3s ease;  
+}
+
+.about__image:hover {
+  padding-left: 5px;
+}
+
+.about__btn {
+  color: #000;
+  font-size: 16px;
+  background-color: #ffde00;
+  padding: 23px 25px 21px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px rgba(255, 222, 0, 0.35), inset 0px -2px 2px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.about__btn:hover {
+  box-shadow: none;
+}
+
+.content__list {
+  border-left: solid 3px #ff885e;
+  padding-left: 16px;
+}
+
+.content__list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.content__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.content__item--mod {
+  font-size: 24px;
+  font-weight: 700;
+  color: #c9c3f3;
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    margin-bottom: 35px;
+  }
+
+  .menu__logo {
+    order: 0;
+    margin-bottom: 20px;
+  }
+  .menu__list {
+    flex-wrap: wrap;
+    order: 2;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  .menu__btn {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .menu__list {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .menu__item {
+    padding: 10px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .title {
+    max-width: 525px;
+    font-size: 34px;
+  }
+
+  .title__about {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    padding: 0 10px;
+  }
+
+  .header {
+    min-height: max-content;
+    background-image: url('../images/footer.svg'), url(), url(), linear-gradient(90deg, #8159c6 0%, #6c7cff 100%);
+    background-size: 100%;
+  }
+
+  .menu {
+    padding-top: 13px;
+  }
+
+  .menu__img {
+    max-width: 44px;
+  }
+  .menu__text {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .menu__list {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__item {
+    width: 150px;
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu__btn {
+    padding: 14px 20px 12px;
+  }
+
+  .content__general {
+    flex-wrap: wrap;
+  }
+
+  .content__left {
+    margin-right: 0;
+  }
+
+  .title {
+    max-width: 260px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 12px;
+  }
+
+  .title__about {
+    margin: 22px 15px 7px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .about__image {
+    margin-bottom: 20px;
+  }
+
+  .about__btn {
+    width: 266px;
+    margin-bottom: 48px;
+  }
+  
+  .content__right {
+    margin-bottom: 43px;
+  }
+
+  .content__list:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
